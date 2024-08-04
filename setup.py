@@ -1,0 +1,21 @@
+setup(
+    name="labrador",
+    version="1.0.0",
+    description="a drop counting device",
+    long_description=README,
+    long_description_content_type="text/markdown",
+    url="",
+    author="William E. Robinson",
+    author_email="william.robinson@ru.nl",
+    license="MIT",
+    classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+    ],
+    packages=["labrador"],
+    include_package_data=True,
+    install_requires=["pyserial", "keyboard"],
+    extras_require={"dev": ["pyinstaller", "black"]},
+    entry_points={"console_scripts": ["labrador=labrador.__main__:main"]},
+)
